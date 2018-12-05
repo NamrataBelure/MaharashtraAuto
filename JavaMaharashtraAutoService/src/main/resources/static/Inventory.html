@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAS-Inventory</title>
+<meta name="description"
+	content="Ethanol is an Agency and Personal Portfolio Template built with bootstrap 3.3.2. This is created for a cause to support my uncle's campaign. Go and Donate at - https://life.indiegogo.com/fundraisers/medical-support-for-a-filipino-overseas-worker--3/x/10058181">
+<meta name="keywords"
+	content="portfolio, agency, bootstrap theme, mobile responsive, template, personal">
+<meta name="author" content="ThemeForces.Com">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72"
+	href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114"
+	href="img/apple-touch-icon-114x114.png">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="fonts/font-awesome/css/font-awesome.css">
+
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet"
+	href="css/nivo_lightbox_themes/default/default.css">
+
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<link
+	href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+	rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+
+
+
+</head>
+
+<body>
+
+	<div id="header"></div>
+	<div class="container">
+		<div class="row text-center"
+			style="border: 1px solid black; margin-top: 86px;">
+			<div class="col-md-10 col-md-offset-1">
+
+				<form method="POST" action="/AddInventory">
+
+					<h2 style="padding-bottom: 5px;">Inventory</h2>
+					<div class="row"
+						style="padding: 10px; background-color: white; height: 40%;">
+						<br>
+					</div>
+					<br>
+					<table border="1"
+						style="margin-left: 0px; background-color: white; width: 100%;"
+						cellpadding="0" cellspacing="0">
+						<thead>
+							<tr>
+								<th rowspan="2" style="width: 80px;">Product/Items</th>
+
+								<th rowspan="2" style="width: 80px;">Old Quantity</th>
+								<th rowspan="2" style="width: 80px;">New Quantity</th>
+								<th rowspan="2" style="width: 80px;">Total in Stock
+									Quantity</th>
+
+								<th rowspan="2" style="width: 80px;">Action</th>
+							</tr>
+
+						</thead>
+						<tbody>
+							<tr>
+
+								<td><div id="divProduct" style=""></div></td>
+								<td><input type="text" readOnly id="proOldQty"
+									name="proOldQty" style="width: 80px;"></td>
+								<td style="width: 80px;"><input type="text" id="proNewQty"
+									name="proNewQty" style="width: 80px;" onblur="QtyChange();"></td>
+								<td style="width: 10%"><input type="text" id="inStock" readOnly
+									name="inStock" style="width: 80px;"></td>
+
+								<td style="width: 10%"><input type="button" value="Add"
+									onClick="AddInventory()"></td>
+							</tr>
+						</tbody>
+					</table>
+					<div id="inventorygrid"
+						style="font-size: 12px; width: 971px; margin-left: -35px; margin-top: 15px""></div>
+					<br> <input type="button" value="Submit"
+						class="btn btn-primary tf-btn color" style="margin: 20px;"
+						onclick="SubmitInventory();">
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div id="footer"></div>
+	<div id="loginModel"></div>
+	<link rel="stylesheet" href="css/kendo.common-material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.mobile.min.css">
+
+	<script src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kendo.all.min.js"></script>
+	<script src="js/MAS.js"></script>
+
+
+
+
+
+</body>
+</html>

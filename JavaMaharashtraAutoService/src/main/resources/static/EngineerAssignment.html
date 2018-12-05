@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAS -Engineer Assignment</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+	
+	<div id="header"></div>
+	<div class="container">
+		<form method="POST" action="/AddAssignment">
+
+			<div class="section-header">
+				<br> <br> <br>
+				<h2>
+					<strong>Engineer Assignment</strong>
+				</h2>
+
+			</div>
+
+
+			<div class="col-lg-6">
+				<div class="input-group">
+					<span class="input-group-addon"  style="height: 38px;">
+						Engineer :</span> 
+						<div id="ddlEngineer" class="form-control"></div>
+						<input type="text"  style="display:none;" 
+						style="height: 38px;" id="userId" name="userId" >
+				</div>
+
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon" > 
+					Vehicle Number :</span>
+					<div id="ddlJobs" class="form-control"></div>
+					<input type="text" style="display:none;"
+						style="height: 38px;" placeholder="Job ID *" id="jobId"
+						name="jobId">
+				</div>
+				<br>
+
+				<div class="input-group">
+					<span class="input-group-addon" > Assign
+						Date :</span> <input type="date" class="form-control"
+						style="height: 38px;"  name="assDate"
+						id="assDate">
+				</div>
+				<br>
+			</div>
+
+			<div class="col-lg-6">
+
+
+				<div class="input-group">
+					<span class="input-group-addon" > Is Available
+						:</span> <select id="isAvailable"  name= "isAvailable" class="form-control">
+						<option>Yes</option>
+						<option>No</option>
+					</select> <input type="text" style="display:none;" class="form-control" 
+						style="height: 38px;" placeholder="Is Available *"
+						 >
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon" > Job Status :</span> <select
+						id="jobStatus" name="jobStatus" class="form-control">
+						<option>Assign</option>
+						<option>Pending</option>
+						<option>Work in progress</option>
+						<option>Completed</option>
+
+					</select> <input style="display:none;" type="text" class="form-control" id="proExpDate"
+						style="height: 38px;" placeholder="Job Status *">
+				</div>
+
+				<br>
+
+
+
+				<div class="input-group">
+					<span class="input-group-addon" > Estimated
+						Time Taken :</span> <input type="text" class="form-control"
+						style="height: 38px;" placeholder="Estimated Time Taken in hours *"
+						name="esttimeTaken" id="esttimeTaken">
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-lg-12 text-center">
+					<br> <input type="submit" class="btn btn-primary"
+						value="Assign Job">
+
+
+				</div>
+
+
+			</div>
+
+		</form>
+	</div>
+	<br>
+	<br>
+
+	<div id="footer"></div>
+	<div id="loginModel"></div>
+
+	<link rel="stylesheet" href="css/kendo.common-material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.mobile.min.css">
+
+	<script src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+	<script type="text/javascript" src="js/MAS.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kendo.all.min.js"></script>
+	<script src="js/MAS.js"></script>
+</body>
+</html>

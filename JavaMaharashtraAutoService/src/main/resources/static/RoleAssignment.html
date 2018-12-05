@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAS -Role Assignment</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+	
+	<div id="header"></div>
+	<div class="container">
+		<form method="POST" action="/UpdateRole">
+
+			<div class="section-header">
+				<br> <br> <br>
+				<h2>
+					<strong>Role Assignment</strong>
+				</h2>
+
+			</div>
+
+
+			<div class="col-lg-12">
+				<div class="input-group">
+					<span class="input-group-addon" style="height: 38px;">
+						Employee :</span>
+					<div id="ddlUsers" class="form-control"></div>
+					<input type="text" style="display: none;" style="height: 38px;"
+						id="userId" name="userId">
+				</div>
+
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon"> Role :</span>
+					<div id="ddlRoles" class="form-control"></div>
+					<input type="text" style="display: none;" style="height: 38px;"
+						placeholder="Role ID *" id="rolId" name="rolId">
+				</div>
+
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-lg-12 text-center">
+					<br> <input type="submit" class="btn btn-primary"
+						value="Assign Role">
+
+				</div>
+
+
+			</div>
+
+		</form>
+	</div>
+	<br>
+	<br>
+
+	<div id="footer"></div>
+	<div id="loginModel"></div>
+
+	<link rel="stylesheet" href="css/kendo.common-material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.mobile.min.css">
+
+	<script src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+	<script type="text/javascript" src="js/MAS.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kendo.all.min.js"></script>
+	<script src="js/MAS.js"></script>
+</body>
+</html>

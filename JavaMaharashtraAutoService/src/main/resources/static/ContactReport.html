@@ -1,0 +1,109 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mas-Contact Report</title>
+<!-- 
+<style>
+table td{
+
+a{
+color:blue;
+}
+</style>
+ -->
+ 
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/prettyPhoto.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+	href="images/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114"
+	href="images/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+	href="images/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+	href="images/ico/apple-touch-icon-57-precomposed.png">
+<link rel="stylesheet" href="css/kendo.common-material.min.css" />
+<link rel="stylesheet" href="css/kendo.material.min.css" />
+<link rel="stylesheet" href="css/kendo.material.mobile.min.css" />
+ 
+</head>
+
+<body>
+	
+
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-6"
+				style="margin-top:-23px; margin-bottom: 50px;" ng-app="myApp">
+
+				<div ng-controller="ContactReport">
+					<h2
+						style="margin-bottom: 20px; font-weight: bold; color: darkorange;">Contact Report</h2>
+					<div class="col-md-12">
+						<table border="1" class="table table-bordered table-hover"
+										width="200">
+							<thead>
+								<tr>
+									<th class=""><b style="color: black">Name </b></th>
+									<th><b style="color: black">Email id</b></th>
+									<th><b style="color: black">Phone</b></th>
+									<th><b style="color: black">Company Name</b></th>
+									<th><b style="color: black">Subject</b></th>
+									<th><b style="color: black">Message</b></th>
+							
+								</tr>
+								<tr ng-repeat="x in listContacts">
+									<td>{{x.name}}</td>
+									<td>{{x.email}}</td>
+									<td>{{x.phone}}</td>
+									<td>{{x.companyName}}</td>
+									<td>{{x.subject}}</td>
+									<td>{{x.message}}</td>
+									
+									
+								</tr>
+
+							</thead>
+
+						</table>
+
+
+
+					</div>
+
+				</div>
+			</div>
+ <input id="printpagebutton" type="submit"  class="btn btn-primary tf-btn color" value="print report"  onclick="printpage()"/>
+		</div>
+	</div>
+	
+	
+	<link rel="stylesheet" href="css/kendo.common-material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.mobile.min.css">
+
+	<script src="js/angular.min.js"></script>
+    <script src="js/Mas.js"></script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+	<script type="text/javascript" src="js/MAS.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kendo.all.min.js"></script>
+
+</body>
+
+</html>

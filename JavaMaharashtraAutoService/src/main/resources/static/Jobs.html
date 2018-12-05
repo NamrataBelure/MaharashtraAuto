@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAS - Add Jobs Page</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+<body>
+	<div id="header"></div>
+
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-10 col-md-offset-1" style="margin-top:110px;">
+				<form class="form" name="sentMessage" method="POST"
+					action="/AddJobs">
+					<h2>
+						<strong>Add Jobs </strong>
+					</h2>
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="input-group">
+								<span class="input-group-addon" 
+									style="height: 38px;"> Vehicle Number : </span> <input
+									type="text" autocomplete="off" class="form-control"
+									placeholder="Vehicle Number *" id="vin" name="vin" required
+									data-validation-required-message="Please enter Vehicle Number">
+								<p class="help-block text-danger"></p>
+							</div>
+							<br>
+						</div>
+
+						<div class="col-md-12">
+							<div class="input-group">
+								<span class="input-group-addon" 
+									style="height: 38px;"> Vehicle Kilometer's : </span> <input
+									type="text" autocomplete="off" class="form-control"
+									placeholder="Vehicle Kilometer's *" id="vinKm" name="vinKm"
+									required
+									data-validation-required-message="Please enter Vehicle Km">
+								<p class="help-block text-danger"></p>
+							</div>
+							<br>
+						</div>
+
+
+						<div class="col-md-12">
+							<div class="input-group">
+								<span class="input-group-addon" 
+									style="height: 38px;"> Service Date : </span>
+									 <input type="text" autocomplete="off" class="form-control"
+									placeholder="Service Date *" id="serDate"
+									name="serDate" onfocus="(this.type='date')" required
+									data-validation-required-message="Please enter Service Date">
+								<p class="help-block text-danger"></p>
+							</div>
+							<br>
+						</div>
+
+
+						<div class="col-md-12">
+							<div class="input-group">
+								<span class="input-group-addon" 
+									style="height: 38px;">Delivery Date : </span>
+									<input type="text" autocomplete="off" class="form-control"
+									placeholder="Delivery Date *" id="delDate"
+									name="delDate" onfocus="(this.type='date')" required
+									data-validation-required-message="Please enter Delivery Date">
+								<p class="help-block text-danger"></p>
+							</div>
+							<br>
+						</div>
+
+						<div class="col-md-12">
+
+							<div class="input-group">
+								<span class="input-group-addon" 
+									style="height: 38px;"> Job Details :</span>
+
+								<textarea class="form-control" rows="7"
+									placeholder="Job Details" id="jobDes" name="jobDes"
+									style="resize: none;" required
+									data-validation-required-message="Please enter Job Details."></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+							<br>
+						</div>
+
+
+
+						<div class="col-md-12">
+							<div class="input-group">
+								<span class="input-group-addon" 
+									style="height: 38px;"> Estimated Amount : </span> <input
+									type="text" autocomplete="off" class="form-control"
+									placeholder="Estimated Amount *" id="estAmt" name="estAmt"
+									required
+									data-validation-required-message="Please enter Estimated Amount">
+								<p class="help-block text-danger"></p>
+							</div>
+							<br>
+						</div>
+
+						<div class="col-md-12">
+							<div class="input-group">
+								<span class="input-group-addon" 
+									style="height: 38px;"> UserID : </span> <input type="text"
+									autocomplete="off" class="form-control" placeholder="UserID *"
+									id="userId" name="userId" required
+									data-validation-required-message="Please enter User Id" disabled >
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+					</div>
+					<br>
+					<button type="submit" class="btn btn-primary">Add Job</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+	<div id="loginModel"></div>
+	<link rel="stylesheet" href="css/kendo.common-material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.mobile.min.css">
+	<script src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+	<script type="text/javascript" src="js/MAS.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kendo.all.min.js"></script>
+	<script src="js/MAS.js"></script>
+
+</body>
+</html>

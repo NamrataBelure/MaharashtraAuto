@@ -1,0 +1,100 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAS - Joining Page</title>
+<meta name="description"
+	content="Ethanol is an Agency and Personal Portfolio Template built with bootstrap 3.3.2. This is created for a cause to support my uncle's campaign. Go and Donate at - https://life.indiegogo.com/fundraisers/medical-support-for-a-filipino-overseas-worker--3/x/10058181">
+<meta name="keywords"
+	content="portfolio, agency, bootstrap theme, mobile responsive, template, personal">
+<meta name="author" content="ThemeForces.Com">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72"
+	href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114"
+	href="img/apple-touch-icon-114x114.png">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet"
+	href="css/nivo_lightbox_themes/default/default.css">
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link
+	href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+	rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+</head>
+
+<body>
+	
+
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-6"
+				style="margin-top: -5px; margin-bottom: 50px;" ng-app="myApp">
+				<div ng-controller="AssignmentsController">
+					<h2 style="margin-bottom: 20px; font-weight: bold;">
+						Assignments Report</h2>
+					<div class="col-md-12">
+					
+					<table border="1" align="center">
+						<thead>
+								<tr>
+									<th class=""><b style="color: black"> Engineer Id </b></th>
+									<th><b style="color: black"> User Id </b></th>
+									<th><b style="color: black"> Assignment Date</b></th>
+									<th><b style="color: black"> Estimated Time Taken</b></th>
+									<th><b style="color: black"> Available</b></th>
+									<th><b style="color: black"> Work Status</b></th>
+								</tr>
+						<tr ng-repeat="x in assignmentList">
+									<td>{{x.userId}}</td>
+									<td>{{x.jobId}}</td>
+									<td>{{x.assDate}}</td>
+									<td>{{x.esttimeTaken}}</td>
+									<td>{{x.isAvailable}}</td>
+									<td>{{x.jobStatus}}</td>
+						
+						</tr>
+
+			</thead>
+
+	</table>
+	
+						</div>
+					</div>
+   
+				</div>
+<input id="printpagebutton" type="submit"  class="btn btn-primary tf-btn color" value="print report"  onclick="printpage()"/>
+			</div>
+
+		</div>
+		
+	<link rel="stylesheet" href="css/kendo.common-material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.mobile.min.css">
+	
+	<script src="js/angular.min.js"></script>
+	<script src="js/Mas.js"></script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+	<script type="text/javascript" src="js/MAS.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kendo.all.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	
+</body>
+
+</html>

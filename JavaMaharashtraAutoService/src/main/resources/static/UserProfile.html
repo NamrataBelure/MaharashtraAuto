@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAS-User Profile</title>
+<meta name="description"
+	content="Ethanol is an Agency and Personal Portfolio Template built with bootstrap 3.3.2. This is created for a cause to support my uncle's campaign. Go and Donate at - https://life.indiegogo.com/fundraisers/medical-support-for-a-filipino-overseas-worker--3/x/10058181">
+<meta name="keywords"
+	content="portfolio, agency, bootstrap theme, mobile responsive, template, personal">
+<meta name="author" content="ThemeForces.Com">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72"
+	href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114"
+	href="img/apple-touch-icon-114x114.png">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet"
+	href="css/nivo_lightbox_themes/default/default.css">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<link
+	href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+	rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+
+</head>
+
+<body class="homepage">
+
+	<div id="header"></div>
+
+	<div class="vd_content-section clearfix">
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<div class="panel widget light-widget">
+					<div class="panel-heading no-title"></div>
+					<form class="form-horizontal" action="/UpdateUser" role="form"
+						method="POST" enctype="multipart/form-data">
+						<div class="panel-body">
+							<br>
+							<h2 style="margin-top: 45px;padding-bottom:0px;">
+								<span class="font-semibold">User's Profile</span>
+							</h2>
+							<br>
+							<div class="row">
+								<div class="col-sm-3 mgbt-xs-20">
+									<div class="form-group">
+										<div class="col-xs-12">
+											<div class="thumbnail">
+												<img src="/img/default.jpg" alt=""
+													class="img-circle team-img" id="userImagePath"
+													name="userImagePath" style="width:200px;height:200px;">
+												<div class="caption">
+													<h3 id="fullName"></h3>
+													<p id="userId"></p>
+
+												</div>
+											</div>
+											<div class="form-img-action text-center mgbt-xs-20">
+												<input type="file" class="btn vd_btn  vd_bg-blue" id="upload" name="upload">
+												<i style="font-size: 50px;cursor: pointer;" class="fa fa-cloud-upload append-icon" id="imgUpload" onclick="previewFile()"></i> Upload
+
+
+											</div>
+											<br>
+											<div>
+												<table class="table table-striped table-hover">
+													<tbody>
+														<tr>
+															<td style="width: 60%;">Status</td>
+															<td><span  class="label label-success">Active</span></td>
+														</tr>
+
+														<tr>
+															<td>Member Since
+															</td>
+															<td>
+															<span id="updateDate" class="label label-success"></span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-9">
+
+									<div class="form-group">
+										<h3>Account Setting</h3>
+										<label class="col-sm-3 control-label">UserName/Email</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="email" id="userEmail" name="userEmail"
+														placeholder="Email" class="form-control" readonly>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+
+
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Password</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="password" id="userPassword"
+														name="userPassword" class="form-control"
+														placeholder="Password">
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="form-group">
+										<p>
+											<label class="col-sm-3 control-label">Confirm
+												Password</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="password" id="confirmPassword"
+														name="confirmPassword" class="form-control"
+														placeholder="Confirm Password">
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+
+									<hr>
+
+									<h3>Profile Setting</h3>
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label">First Name</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" id="userFirstName" name="userFirstName"
+														placeholder="First Name" class="form-control">
+												</div>
+
+											</div>
+											<!-- row -->
+										</div>
+
+									</div>
+
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Last Name</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" id="userLastName" name="userLastName"
+														placeholder="Last Name" class="form-control">
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Date Of Birth</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" autocomplete="off" class="form-control"
+														placeholder="Date Of Birth *" id="userDob" name="userDob"
+														onfocus="(this.type='date')" required
+														data-validation-required-message="Please enter Date of birth.">
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+									<hr>
+									<h3 class="mgbt-xs-15">Contact Setting</h3>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Mobile Number</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" id="userMob" name="userMob"
+														placeholder="Mobile Number" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Contact Number</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" id="userContact" name="userContact"
+														placeholder="Contact Number" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Address</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" id="userAddress" name="userAddress"
+														placeholder="Address" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">PAN Card No.</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" id="userPan" name="userPan"
+														placeholder="PAN Number" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Aadhar Card No.</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" id="userAdhar" name="userAdhar"
+														placeholder="Aadhar Number" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<h3 class="mgbt-xs-15">Work</h3>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Experience</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<select id="ddlExp" class="form-control" onchange="SelectExp()">
+														<option>Select Experience</option>
+														<option>0-1 Years</option>
+														<option>1-3 Years</option>
+														<option>3-5 Years</option>
+														<option>5-7 Years</option>
+														<option>7-10 Years</option>
+														<option>10+ Years</option>
+													</select> <input type="text" id="userWorkExp" name="userWorkExp"
+														class="form-control" style="display: none;">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Joining Date</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" autocomplete="off" class="form-control"
+														placeholder="Joining Date *" id="userJoiningDate"
+														name="userJoiningDate" onfocus="(this.type='date')"
+														required
+														data-validation-required-message="Please enter joining date.">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Resign Date</label>
+										<div class="col-sm-9 controls">
+											<div class="row mgbt-xs-0">
+												<div class="col-xs-9">
+													<input type="text" autocomplete="off" class="form-control"
+														placeholder="Resign Date *" id="userResignDate"
+														name="userResignDate" onfocus="(this.type='date')"
+														required
+														data-validation-required-message="Please enter resign date">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+						<div class="pd-20">
+							<button type="submit" class="btn btn-primary"
+								style="margin-left: 0;">Submit</button>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+
+	<link rel="stylesheet" href="css/kendo.common-material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.min.css">
+	<link rel="stylesheet" href="css/kendo.material.mobile.min.css">
+
+	<script src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+	<script type="text/javascript" src="js/MAS.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kendo.all.min.js"></script>
+	<script src="js/MAS.js"></script>
+
+
+
+</body>
+</html>

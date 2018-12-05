@@ -1,0 +1,31 @@
+<div class="col-md-8">
+	<div class="row">
+	<div class="col-md-12">
+			<div class="form-group" id="errorBox" style="display:none;">				
+			<span id="errorMsg" style="color:red;"></span>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="form-group">				
+				<input type="text" autocomplete="off" class="form-control"
+					placeholder="Enter user email *" id="userEmail" name="userEmail"
+					required
+					data-validation-required-message="Please enter your email id">
+				<p class="help-block text-danger"></p>
+			</div>
+		</div>
+
+		<div class="col-md-12">
+			<div class="form-group">
+				<input type="password" autocomplete="off" class="form-control"
+					placeholder="Enter password" id="userPassword" name="userPassword"
+					required
+					data-validation-required-message="Please enter your password">
+
+			</div>
+		</div>
+	</div>
+	<button type="button" class="btn btn-primary tf-btn color"
+		onclick="DoLogin();">Login</button>
+
+</div>
